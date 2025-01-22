@@ -1,0 +1,15 @@
+
+//LIKE EVERYONE MY FIRST CODE WAS ONE LINE 
+
+
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace HelloWorld;
+
+public class learn 
+{         
+        
+        Console.WriteLine("Hello World");
+}
