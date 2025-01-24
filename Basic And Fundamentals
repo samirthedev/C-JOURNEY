@@ -1,0 +1,46 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace HelloWorld;
+
+public class learn
+{
+
+
+    public static void Main()
+    {
+        
+        // //I am currently learning the basics and fundamentals of the C# language. My goal is to build a strong foundation and understanding of its core concepts.
+
+
+        for (int i = 0; i < 10; i++)
+        {
+            Console.WriteLine("hello world");
+        }
+
+        int[] a = { 1, 2, 3, 3 };
+
+        foreach (int i in a)
+        {
+
+            Console.WriteLine(i);
+        }
+
+        while (a.Equals(a.Length))
+        {
+            Console.WriteLine(a[0]);
+
+            return;
+        }
+
+
+
+
+
+
+
+    }
+
+
+}
