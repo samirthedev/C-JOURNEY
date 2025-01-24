@@ -1,0 +1,92 @@
+//I have been practicing how to use for loops in C#. Before starting, I gained basic knowledge about for loops by watching videos on YouTube. I found the concept to be fairly straightforward. I learned how to use for loops, but I wasn't sure where to practice them effectively.
+
+//To improve, I decided to search for good practice platforms and eventually found websites like LeetCode, HackerRank, and others. I started solving problems there, which helped me a lot in understanding for loops better and using them in different scenarios.
+
+
+
+//Some easy task i solved in leetcode where use for loop functions to solve:_Question(1497)Check if array pairs are divisible by k:
+
+//Besides learning about loops, I have also learned other concepts like arrays, using Console.WriteLine for output, the Length property for arrays, and much more.
+
+
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace HelloWorld;
+
+public class traing
+{
+    public static void Main()
+    {
+
+
+        int[] arr = { 1, 2, 3, 4, 5, 6 };
+
+
+        int k = 10;
+
+
+
+        if (arr.Length % 2 == 0)
+        {
+            Console.WriteLine(pp(arr, k));
+        }
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+    public static bool pp(int[] arr, int k)
+    {
+
+
+
+        int n1 = arr.Length / 2;
+        for (int i = 0, j = arr.Length - 1; i < n1; i++, j--)
+        {
+
+
+
+
+            int pointer1 = arr[i];
+
+            int pointer2 = arr[j];
+
+
+
+            int result = pointer1 + pointer2;
+
+            if (result % k == 0)
+            {
+                return true;
+            }
+
+
+
+
+
+
+
+
+
+        }
+
+        return false;
+    }
+
+
+
+
+
+}
+
