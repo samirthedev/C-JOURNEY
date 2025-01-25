@@ -1,0 +1,85 @@
+using System;
+
+using System.Linq;
+
+using System.Collections.Generic;
+
+
+
+namespace HelloWorld;
+
+
+
+public class learn
+{
+
+
+    public static void Main()
+    {
+
+      //Here I use For loop function to get infinity output in many way.
+
+        for (int i = 0; true; i++)
+        {
+            Console.WriteLine(i);
+        }
+
+
+
+        for (int i = 0; ; i++)
+        {
+            Console.WriteLine(i);
+        }
+
+        for (; ; )
+        {
+
+            Console.WriteLine("infinity");
+
+        }
+
+
+
+
+        for (int i = 0, j = 10; true; i++, j--)
+        {
+
+            Console.WriteLine(i);
+
+
+            if (i > 500)
+            {
+
+
+                Console.WriteLine("break");
+
+
+                break;
+            }
+
+
+        }
+
+
+        for (;true;)
+        {
+
+            Console.WriteLine("infinity");
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+}
+
