@@ -15,7 +15,7 @@ using System.Collections.Generic;
 
 namespace HelloWorld;
 
-public class traing
+public class Learn
 {
     public static void Main()
     {
