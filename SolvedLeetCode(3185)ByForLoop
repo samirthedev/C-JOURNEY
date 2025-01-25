@@ -1,0 +1,103 @@
+using System;
+
+using System.Linq;
+
+using System.Collections.Generic;
+
+
+
+namespace HelloWorld;
+
+
+
+public class countdays
+{
+    public static void Main()
+    {
+
+
+        int[] hours = { 12, 12, 30, 24, 24 };
+
+        int[] hours1 = { 72, 48, 24, 3 };
+
+
+
+
+
+
+        CD(hours1);
+
+        CD(hours);
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+    public static void CD(int[] h)
+    {
+
+
+        int output = 0;
+
+
+        int n = h.Length;
+
+
+        for (int i = 0; i < n; i++)
+        {
+
+            int dayPointer1 = h[i];
+
+
+            for (int j = i + 1; j < n; j++)
+            {
+                int dayPointer2 = h[j];
+
+                bool check = ((dayPointer1 + dayPointer2) % 24) == 0;
+
+
+
+
+                if (check)
+                {
+
+
+                    output++;
+
+
+
+
+                }
+
+
+            }
+
+        }
+
+        Console.WriteLine(output);
+
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
