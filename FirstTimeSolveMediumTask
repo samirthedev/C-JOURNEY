@@ -1,0 +1,80 @@
+//this is my first task that I solve in leetcode which is medium type task|1010.the number of pairs of songs for which their total duration in seconds is divisible by 60.
+
+
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace HelloWorld;
+
+public class TimeSongs
+{
+    public static void Main()
+    {
+
+
+
+        int[] times = { 30, 20, 150, 100, 40 };
+
+        int s = 60;
+
+
+        timeDivider(times, s);
+
+
+
+
+    }
+
+    public static void timeDivider(int[] t, int s)
+    {
+
+
+        int output = 0;
+
+        int l = t.Length;
+
+
+        for (int i = 0; i < l; i++)
+        {
+
+            int p_1 = t[i];
+
+            for (int j = i + 1; j < l; j++)
+            {
+
+                int p_2 = t[j];
+
+
+                bool check = (p_1 + p_2) % 60 == 0;
+
+
+                if (check)
+                {
+                    output++;
+                }
+
+
+
+
+            }
+        }
+
+
+
+
+
+        Console.WriteLine(output);
+
+
+
+
+
+    }
+}
+
+
+
+
+
+
