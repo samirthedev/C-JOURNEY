@@ -1,0 +1,62 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace HelloWorld;
+
+public class learn1
+{
+    public static void Main()
+    {
+        int i = 0;
+        bool c = i < 10;
+
+
+
+
+
+
+
+
+        while (c)
+        {
+
+            i++;
+            if (i > 10)
+            {
+                break;
+            }
+
+            Console.WriteLine(i);
+
+
+
+        }
+
+
+
+
+
+        while (float.TryParse(Console.ReadLine(), out float r))
+        {
+            Console.WriteLine(r);
+        }
+
+
+
+        do
+        {
+            Console.WriteLine("enter ");
+        }
+        while (int.TryParse(Console.ReadLine(), out int i1));
+
+
+
+
+
+
+
+
+
+    }
+}
